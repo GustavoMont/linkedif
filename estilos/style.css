@@ -16,6 +16,7 @@ a, li, ul{
 body{
     min-height: 100vh;
     position: relative;
+    padding-bottom: 3.5rem;
 }
 
 header{
