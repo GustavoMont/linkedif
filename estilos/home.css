@@ -4,3 +4,13 @@ main section{
 section h2{
     margin-bottom: .8rem;
 }
+#bg-container{
+    border: 2px solid black;
+}
+#bg-container img{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
