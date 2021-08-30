@@ -4,13 +4,23 @@ main section{
 section h2{
     margin-bottom: .8rem;
 }
-#bg-container{
-    border: 2px solid black;
-}
+
 #bg-container img{
     position: absolute;
     width: 100%;
     z-index: 1;
-    left: 0;
     top: 0;
+    transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.5s;
+}
+
+#img-1{
+    left: 0;
+}
+
+#img-2{
+    left: 0;
+}
+
+img.sumiu{
+    opacity: 0;
 }
