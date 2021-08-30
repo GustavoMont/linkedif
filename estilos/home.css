@@ -1,10 +1,12 @@
-main section{
-    margin-bottom: 1.2rem;
-}
-section h2{
-    margin-bottom: .8rem;
+main{
+    border-radius: 35px;
 }
 
+main .main-content{
+    margin-bottom: 1.1rem;
+    background-color: white;
+    border-radius: 30px;
+}
 #bg-container img{
     position: absolute;
     width: 100%;
@@ -23,4 +25,70 @@ section h2{
 
 img.sumiu{
     opacity: 0;
+}
+
+img[data-src].lazy-load{
+    opacity: 0; 
+    transform: scale(.1);
+    transition: 1.5s ease all;
+    left: 0;
+}
+img[src].lazy-load{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+.main-content#first{
+    margin-top: 64px;
+}
+
+.main-content{
+    position: relative;
+    text-transform: uppercase;
+    height: 100vh;
+    z-index: 1;
+
+    background-image: linear-gradient(to bottom, rgba(42, 182, 218, 0.836), rgb(255, 255, 255));
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-content h2{
+    color: var(--blue-sapphire);
+    font-size: 2.2rem;
+    font-weight: 900;
+    text-align: center;
+
+    position: absolute;
+    top: 50px;
+    left: 60%;
+    transform: translateX(-50%);
+}
+
+.main-content p{
+    width: 500px;
+    height: 200px;
+
+    overflow: hidden;
+
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    color: var(--medium-carmine);
+    
+    position: absolute;
+    top: 50%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+
+}
+.main-content img[src]{
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 8;
 }

@@ -20,4 +20,16 @@ setInterval(() => {
     image1.classList.toggle('sumiu')
     image2.classList.toggle('sumiu')
     imageIndex++
-}, 4000);
+}, 3000);
+
+
+const lazyImages = document.querySelectorAll('.lazy-load')
+
+window.onscroll = ()=>{
+    lazyImages.forEach((item) =>{
+        const distanciaTopo = item.getBoundingClientRect().top
+        if (distanciaTopo < window.innerHeight + 120) {
+            item.src = item.getAttribute('data-src')
+        }
+    })
+}
