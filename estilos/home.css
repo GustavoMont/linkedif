@@ -9,25 +9,6 @@ main .main-content{
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
 }
-#bg-container img{
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-    transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.5s;
-}
-
-#img-1{
-    left: 0;
-}
-
-#img-2{
-    left: 0;
-}
-
-img.sumiu{
-    opacity: 0;
-}
 
 img[data-src].lazy-load{
     opacity: 0; 
