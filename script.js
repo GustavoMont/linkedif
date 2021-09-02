@@ -1,4 +1,4 @@
-const imagens = ['./imagens/menu-image/office-1.jpg', './imagens/menu-image/office-2.jpg', './imagens/menu-image/work.jpg']
+const imagens = ['./imagens/menu-image/office-1.png', './imagens/menu-image/office-2.png', './imagens/menu-image/work.png']
 
 const image1 = document.querySelector('#img-1')
 const image2 = document.querySelector('#img-2')
