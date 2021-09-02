@@ -6,25 +6,8 @@ main .main-content{
     margin-bottom: 1.1rem;
     background-color: white;
     border-radius: 30px;
-}
-#bg-container img{
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-    transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.5s;
-}
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
-#img-1{
-    left: 0;
-}
-
-#img-2{
-    left: 0;
-}
-
-img.sumiu{
-    opacity: 0;
 }
 
 img[data-src].lazy-load{
@@ -49,12 +32,6 @@ img[src].lazy-load{
     height: 100vh;
     z-index: 1;
 
-    background-image: linear-gradient(to bottom, rgba(42, 182, 218, 0.836), rgb(255, 255, 255));
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .main-content h2{
@@ -67,6 +44,10 @@ img[src].lazy-load{
     top: 50px;
     left: 60%;
     transform: translateX(-50%);
+}
+
+.main-content img{
+    width: 380px;
 }
 
 .main-content p{
@@ -108,7 +89,9 @@ img[src].lazy-load{
     background-color: var(--blue-sapphire);
     border-radius: 30px;
     transition: .4s all ease-in;
-    
+
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
 }
 
 .main-content a:hover{
