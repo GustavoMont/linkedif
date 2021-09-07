@@ -2,7 +2,7 @@ body{
     background: white;
 }
 
-.vagas{
+#vagas{
     margin-top: 2rem;
 
     display: flex;
@@ -16,12 +16,10 @@ body{
     width: 45%;
     min-width: 300px;
 
-    border: 2px solid var(--fuzzy-wuzzy);
+    border: 2px solid rgb(151, 151, 151);
 
-    min-height: 380px;
-    border-radius: 12px 12px 8px 8px;
-
-    
+    height: 360px;
+    border-radius: 12px 12px 8px 8px;   
 }
 
 main h2{
@@ -36,10 +34,14 @@ main h2{
     padding: 1rem .2rem;
     text-align: center;
 }
+.title.dev{
+    background: linear-gradient(to right, #373b44, #4286f4);
+}
 .title h2{
     font-size: 1.4rem;
     color: white;
 }
+
 .vagas-container .main-info{
     
     text-align: center;
@@ -63,19 +65,19 @@ main h2{
     break-inside: auto;
     text-align: justify;
     
+
+    /* border: 2px solid black; */
+
     padding: .9rem;
-    overflow: hidden;
+    overflow: auto;
+    height: 165px;
+
 }
 
-.info .more-text{
-    display: none;
-}
-
-.vagas-container #more{
-    margin: 1.4rem 0;
-    background: transparent;
+.button {
+    margin: .5rem .9rem;
     border: none;
-    
+    display: block;
     cursor: pointer;
     
     font-family: 'Barlow Condensed', sans-serif;
@@ -86,7 +88,7 @@ main h2{
     transition: color .2s ease;
 }
 
-#more:hover{
+.button:hover{
     color: rgba(107, 107, 243, 0.76);
 
 }
