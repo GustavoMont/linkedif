@@ -22,14 +22,17 @@ setInterval(() => {
     imageIndex++
 }, 3000);
 
-
 const lazyImages = document.querySelectorAll('.lazy-load')
+
+
+
 
 window.onscroll = ()=>{
     lazyImages.forEach((item) =>{
+        const dataSrc = item.getAttribute('data-src')
         const distanciaTopo = item.getBoundingClientRect().top
         if (distanciaTopo < window.innerHeight + 120) {
-            item.src = item.getAttribute('data-src')
+            item.src = window.innerWidth < 1000 ? `./imagens/mobile/${dataSrc}` : `./imagens/${dataSrc}`
         }
     })
 }
