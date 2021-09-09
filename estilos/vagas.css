@@ -35,7 +35,7 @@ main h2{
     text-align: center;
 }
 .title.dev{
-    background: linear-gradient(to right, #373b44, #4286f4);
+    background: linear-gradient(45deg, #373b44, #4286f4);
 }
 .title h2{
     font-size: 1.4rem;
