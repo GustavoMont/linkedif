@@ -11,7 +11,7 @@ a{
 }
 :root{
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     --light-green: hsla(141, 79%, 69%, 1);
     --blue-sapphire: hsla(198, 82%, 23%, 1);
     --cyan-process: hsla(193, 99%, 47%, 1);
@@ -23,7 +23,6 @@ body{
     min-height: 100vh;
     position: relative;
     padding-bottom: 3.5rem;
-    /* background: linear-gradient(to bottom,rgb(5, 112, 158), hsla(198, 82%, 23%, 1)); */
     overflow-x: hidden;
 }
 
