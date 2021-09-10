@@ -74,6 +74,9 @@ img.sumiu{
     bottom: 0;
     z-index: 999;
 }
+#menu .toggle-menu{
+    display: none;
+}
 #menu ul{
     max-width: 900px;
     margin: 0 auto;
@@ -114,4 +117,36 @@ footer a{
 }
 footer a:hover{
     color: rgb(194, 58, 212);
+}
+@media (max-width: 1000px){
+    header {
+        height: 40vw;
+        padding: 0;
+        background-color: black;
+    }
+    header img{
+        width: 100%;
+    }
+}
+@media (max-width: 730px){
+    #menu{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    #menu ul{
+        display: none;
+    }
+    #menu .toggle-menu{
+        font-family: 'Barlow Condensed', sans-serif;
+        display: block;
+        align-self: center;
+        padding: .5rem;
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: var(--cyan-process);
+        color: white;
+        -webkit-text-stroke: var(--blue-sapphire) .5px;
+        cursor: pointer;
+    }
 }

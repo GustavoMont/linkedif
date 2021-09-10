@@ -18,11 +18,18 @@
 <body>
     <header>
         <div id="bg-container">
-            <img src="./imagens/menu-image/office-2.png" alt="Escritório" id="img-2" class="sumiu">
-            <img src="./imagens/menu-image/office-1.png" alt="Escritório" id="img-1">
+            <picture>
+                <source media="(max-width: 1000px)" srcset="./imagens/mobile/office-2.png" type="image/">
+                <img src="./imagens/menu-image/office-2.png" alt="Escritório" id="img-2" class="sumiu">
+            </picture>
+            <picture>
+                <source media="(max-width: 1000px)" srcset="./imagens/mobile/office-1.png" type="image/">
+                <img src="./imagens/menu-image/office-1.png" alt="Escritório" id="img-1">
+            </picture>
         </div>
         <img src="./imagens/logo-grande.svg" alt="Logo Linkedif" id="logo">
         <nav id="menu">
+            <button class="toggle-menu">MENU</button>
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="./vagas.html">Vagas</a></li>
