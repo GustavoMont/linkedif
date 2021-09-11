@@ -10,28 +10,58 @@
             rel="stylesheet">
         <link rel="shortcut icon" href="./imagens/logo-grande.svg" type="image/x-icon">
         <link rel="stylesheet" href="./estilos/style.css">
+        <link rel="stylesheet" href="./estilos/quem-somos.css">
         <title>LINKEDIF - Quem Somos</title>
     </head>
 <body>
     <header>
         <div id="bg-container">
-            <img src="./imagens/menu-image/office-2.jpg" alt="Escritório" id="img-2" class="sumiu">
-            <img src="./imagens/menu-image/office-1.jpg" alt="Escritório" id="img-1">
+            <picture>
+                <source media="(max-width: 1000px)" srcset="./imagens/mobile/office-2.png" type="image/">
+                <img src="./imagens/menu-image/office-2.png" alt="Escritório" id="img-2" class="sumiu">
+            </picture>
+            <picture>
+                <source media="(max-width: 1000px)" srcset="./imagens/mobile/office-1.png" type="image/">
+                <img src="./imagens/menu-image/office-1.png" alt="Escritório" id="img-1">
+            </picture>
         </div>
         <img src="./imagens/logo-grande.svg" alt="Logo Linkedif" id="logo">
         <nav id="menu">
+            <button class="toggle-menu">MENU</button>
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="./vagas.html">Vagas</a></li>
                 <li><a href="./quem-somos.html">Quem Somos</a></li>
-                <li><a href="./vagas-dev.html">Vagas Dev</a></li>
+                <li><a href="./vagas-dev.html">Para Dev's</a></li>
                 <li><a href="./cadastro.html">Cadastro</a></li>
                 <li><a href="./contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-
+    <main>
+        <aside>
+            <img src="./imagens/logo-grande.svg" alt="">
+        </aside>
+        <section>
+            <h2>Quem somos</h2>
+            <p>
+                O Linkedif é uma iniciativa do <a href="https://ifnmg.edu.br/pirapora" target="blank">IFNMG</a> (Instituto Federal do norte de Minas Gerais) - campus Pirapora, para ajudar não só seus estudantes mas toda a comunidade que o cerca, divulgando vagas e ofertas de empregos para as mais diversas áreas do mercado de trabalho.
+            </p>
+            <p>
+                O Campus Pirapora foi criado através da Lei n.º 11.892, de 29 de dezembro de 2008, a partir da integração do CEFET de Januária e da Escola Agrotécnica Federal de Salinas, juntamente com as Unidades de Ensino Descentralizadas (UNEDs) de Almenara, Araçuaí, Arinos e Montes Claros. Assim, o Campus Pirapora tornou-se uma das Unidades de Ensino integrantes do Instituto Federal de Educação, Ciência e Tecnologia do Norte de Minas Gerais - IFNMG, que é administrado, coordenado e supervisionado pela Reitoria, órgão executivo do IFNMG, localizada em Montes Claros.
+            </p>
+            <p>
+                O IFNMG - Campus Pirapora, primeira (e única) instituição educacional da esfera federal instalada na microrregião que oferece ensino regular, tem como missão promover uma educação pública de qualidade para que possa atender as demandas das cadeias produtivas, sociais e culturais locais e regionais, contribuindo para o crescimento de toda a região.
+            </p>
+            <p>
+                Nossas empresas parceiras são empresas que sabem que é necessário investir em educação e em desenvolvimeto científico para que o mercado de trabalho tenha colaboradores cada vez melhores e mais experientes e também condições e soluções de trabalhos melhores. O que vai beneficiar empregadores, empregados e assim toda a sociedade em que vivemos.  
+            </p>
+            <p id="lema">
+                Muito mais que um espaço no mercado de trabalho: Oportunidade de mudar o mundo!
+            </p>
+        </section>
+    </main>
 
     <footer>
         <p>Uma iniciativa <a href="https://ifnmg.edu.br/pirapora" target="blank">IFNMG - <em>Campus</em> Pirapora</a>
