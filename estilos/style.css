@@ -112,10 +112,10 @@ footer{
     width: 100%;
     color: white;
 }
-footer a{
+footer p a{
     color: white;
 }
-footer a:hover{
+footer p a:hover{
     color: rgb(194, 58, 212);
 }
 @media (max-width: 1000px){
@@ -128,7 +128,7 @@ footer a:hover{
         width: 100%;
     }
 }
-@media (max-width: 730px){
+@media (max-width: 740px){
     #menu{
         height: 50px;
         display: flex;
