@@ -7,6 +7,6 @@ window.onload = async () =>{
 
     cursos.forEach( curso =>{
         const cursoContainer = document.querySelector("#cursos-container ul")
-        cursoContainer.innerHTML += `<li><a href="https://www.alura.com.br/curso-online-${curso['slug']}" target="blank">${curso['nome']}<a/></li>`
+        cursoContainer.innerHTML += `<li> <a href="https://www.alura.com.br/curso-online-${curso['slug']}" target="blank">${curso['nome']}</a> </li>`
     })
 }

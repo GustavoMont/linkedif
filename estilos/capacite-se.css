@@ -1,0 +1,52 @@
+main{
+    padding: 2rem;
+}
+main h2{
+    color: var(--blue-sapphire);
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#cursos-container ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    padding: 2rem;
+}
+#cursos-container ul li{
+    width: 48%;
+    height: 5rem;
+    margin: 2rem 0;
+}
+#cursos-container ul li a{
+    background-color: var(--blue-sapphire);
+    border-radius: 5px;
+    border: 2px solid var(--fuzzy-wuzzy);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.781);
+    text-align: center;
+
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+
+    transition: all .5s ease-in;
+}
+
+#cursos-container ul li a:hover{
+    background-color: white;
+    color: var(--blue-sapphire);
+    font-weight: 600;
+}
+
+@media (max-width: 750px){
+    #cursos-container ul li{
+        width: 100%;
+    }
+}
