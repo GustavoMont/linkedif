@@ -10,6 +10,7 @@ main form {
     padding: 2rem 1.5rem;
     width: 80%;
     margin: 2rem auto;
+    text-align: center;
 }
 form input{
     padding: .5rem;
@@ -65,6 +66,26 @@ form input{
     top: 1px;
     margin: 0 0 0 auto;
 }
+
+#form-btn{
+    padding: .8rem;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid var(--cyan-process);
+    background-color: var(--blue-sapphire);
+    cursor: pointer;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    margin: 1rem auto;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#form-btn:hover{
+    color: var(--blue-sapphire);
+    background-color: white;
+}
+
 @media (max-width: 750px){
     form{
         text-align: center;
