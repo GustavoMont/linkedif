@@ -45,15 +45,15 @@
             <div class="sobre">
                 <div class="campo">
                     <label for="cargo">Cargo</label>
-                    <input type="text" name="cargo" id="cargo" placeholder="Digite o cargo da vagas...">
+                    <input type="text" name="cargo" id="cargo" placeholder="Digite o cargo da vagas..." required>
                 </div>
                 <div class="campo">
                     <label for="empresa">Empresa</label>
-                    <input type="text" name="empresa" id="empresa" placeholder="Nome da sua empresa..."><br>
+                    <input type="text" name="empresa" id="empresa" placeholder="Nome da sua empresa..." required><br>
                 </div>
                 <div class="campo">
                     <label for="Salario">Valor do salário</label>
-                    <input type="text" name="salario" id="salario" placeholder="O valor do salário...">
+                    <input type="text" name="salario" id="salario" placeholder="O valor do salário..." required>
                 </div>
                 <div class="campo">
                     <label for="local">Local</label>
@@ -61,19 +61,22 @@
                 </div>
                 <div class="campo">
                     <label for="contato">Site da Empresa</label>
-                    <input type="text" name="contaro" id="contato" placeholder="Site da empresa...">
+                    <input type="text" name="contaro" id="contato" placeholder="Site da empresa..." required>
                 </div>
             </div>
             <hr>
             <div class="desc-container">
                 <label for="descricao">Descricao</label>
-                <textarea name="descricao" id="descricao" cols="30" rows="5" placeholder="Dê uma breve descrição da vagas"></textarea>
+                <textarea name="descricao" id="descricao" cols="30" rows="5" placeholder="Dê uma breve descrição da vagas" required></textarea>
             </div>
             <hr>
             <div class="isDev">
                 <label for="dev">É uma vaga para desenvolvedor:</label>
                 <input type="checkbox" name="dev" id="dev">
             </div>
+
+            <div id="resultado"></div>
+
             <button type="submit" id="form-btn">Cadastrar Vaga</button>
         </form>
     </main>
@@ -82,6 +85,8 @@
         <p>Uma iniciativa <a href="https://ifnmg.edu.br/pirapora" target="blank">IFNMG - <em>Campus</em> Pirapora</a>
         </p>
         <p>Desenvolvido por <a href="https://github.com/GustavoMont" target="blank">GustavoMont</a></p>
-    </footer>
+    </footer>   
+    <script src="./script.js"></script>
+    <script src="./scripts/cadastro.js"></script>
 </body>
 </html>

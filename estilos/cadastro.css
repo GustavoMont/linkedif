@@ -67,6 +67,12 @@ form input{
     margin: 0 0 0 auto;
 }
 
+#resultado{
+    text-align: center;
+    color: var(--cyan-process);
+    text-transform: uppercase;
+}
+
 #form-btn{
     padding: .8rem;
     display: inline-block;
