@@ -10,6 +10,7 @@
             rel="stylesheet">
         <link rel="shortcut icon" href="./imagens/logo-grande.svg" type="image/x-icon">
         <link rel="stylesheet" href="./estilos/style.css">
+        <link rel="stylesheet" href="./estilos/cadastro.css">
         <title>LINKEDIF - Faça seu Cadastro</title>
     </head>
 <body>
@@ -41,20 +42,38 @@
     <main>
         <h2>Cadastre sua vaga aqui</h2>
         <form>
-            <label for="cargo">Cargo</label>
-            <input type="text" name="cargo" id="cargo" placeholder="Digite o cargo da vagas...">
-            <label for="empresa">Nome da empresa</label>
-            <input type="text" name="empresa" id="empresa" placeholder="Nome da sua empresa...">
-            <label for="Salario">Valor do salário</label>
-            <input type="text" name="salario" id="salario" placeholder="O valor do salário...">
-            <label for="local">Local</label>
-            <input type="text" name="local" id="local" placeholder="Caso seja remoto deixe em branco">
-            <label for="descricao">Descricao</label>
-            <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Dê uma breve descrição da vagas"></textarea>
-            <label for="dev">Vaga para desenvolvedor</label>
-            <input type="checkbox" name="dev" id="dev">
-            <label for="contato">Um link para contato</label>
-            <input type="text" name="contaro" id="contato">
+            <div class="sobre">
+                <div class="campo">
+                    <label for="cargo">Cargo</label>
+                    <input type="text" name="cargo" id="cargo" placeholder="Digite o cargo da vagas...">
+                </div>
+                <div class="campo">
+                    <label for="empresa">Empresa</label>
+                    <input type="text" name="empresa" id="empresa" placeholder="Nome da sua empresa..."><br>
+                </div>
+                <div class="campo">
+                    <label for="Salario">Valor do salário</label>
+                    <input type="text" name="salario" id="salario" placeholder="O valor do salário...">
+                </div>
+                <div class="campo">
+                    <label for="local">Local</label>
+                    <input type="text" name="local" id="local" placeholder="Deixe em branco se remoto"><br>
+                </div>
+                <div class="campo">
+                    <label for="contato">Site da Empresa</label>
+                    <input type="text" name="contaro" id="contato" placeholder="Site da empresa...">
+                </div>
+            </div>
+            <hr>
+            <div class="desc-container">
+                <label for="descricao">Descricao</label>
+                <textarea name="descricao" id="descricao" cols="30" rows="5" placeholder="Dê uma breve descrição da vagas"></textarea>
+            </div>
+            <hr>
+            <div class="isDev">
+                <label for="dev">É uma vaga para desenvolvedor:</label>
+                <input type="checkbox" name="dev" id="dev">
+            </div>
 
         </form>
     </main>
