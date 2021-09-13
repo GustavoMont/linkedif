@@ -15,8 +15,14 @@
 <body>
     <header>
         <div id="bg-container">
-            <img src="./imagens/menu-image/office-2.jpg" alt="Escritório" id="img-2" class="sumiu">
-            <img src="./imagens/menu-image/office-1.jpg" alt="Escritório" id="img-1">
+            <picture>
+                <source media="(max-width: 1000px)" srcset="./imagens/mobile/office-2.png" type="image/">
+                <img src="./imagens/menu-image/office-2.png" alt="Escritório" id="img-2" class="sumiu">
+            </picture>
+            <picture>
+                <source media="(max-width: 1000px)" srcset="./imagens/mobile/office-1.png" type="image/">
+                <img src="./imagens/menu-image/office-1.png" alt="Escritório" id="img-1">
+            </picture>
         </div>
         <img src="./imagens/logo-grande.svg" alt="Logo Linkedif" id="logo">
         <nav id="menu">
@@ -32,6 +38,26 @@
         </nav>
     </header>
 
+    <main>
+        <h2>Cadastre sua vaga aqui</h2>
+        <form>
+            <label for="cargo">Cargo</label>
+            <input type="text" name="cargo" id="cargo" placeholder="Digite o cargo da vagas...">
+            <label for="empresa">Nome da empresa</label>
+            <input type="text" name="empresa" id="empresa" placeholder="Nome da sua empresa...">
+            <label for="Salario">Valor do salário</label>
+            <input type="text" name="salario" id="salario" placeholder="O valor do salário...">
+            <label for="local">Local</label>
+            <input type="text" name="local" id="local" placeholder="Caso seja remoto deixe em branco">
+            <label for="descricao">Descricao</label>
+            <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Dê uma breve descrição da vagas"></textarea>
+            <label for="dev">Vaga para desenvolvedor</label>
+            <input type="checkbox" name="dev" id="dev">
+            <label for="contato">Um link para contato</label>
+            <input type="text" name="contaro" id="contato">
+
+        </form>
+    </main>
 
     <footer>
         <p>Uma iniciativa <a href="https://ifnmg.edu.br/pirapora" target="blank">IFNMG - <em>Campus</em> Pirapora</a>
