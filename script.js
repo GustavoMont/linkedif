@@ -9,6 +9,18 @@ const image2 = document.querySelector('#img-2')
 const header = document.querySelector('header')
 let imageIndex = 1
 
+
+const menuBtn = document.querySelector("#menu-btn")
+
+menuBtn.addEventListener('click', () =>{
+    menuBtn.innerText = menuBtn.innerText.toLowerCase() === 'menu' ? 'X' : 'MENU' 
+    let isBodyHidden = document.body.style.overflow === 'hidden' 
+    document.querySelector('#menu').classList.toggle('open')
+    console.log(isBodyHidden)
+    document.body.style.overflow = isBodyHidden ? '' : 'hidden'
+})
+
+
 setInterval(() => {
     const imagens = window.innerWidth < 1000 ? imagensP : imagensG
     const img1Classes = image1.classList
