@@ -1,0 +1,39 @@
+main {
+    border: 2px solid rgb(182, 182, 182);
+    border-radius: 20px;
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.568);
+    padding: 2rem;
+}
+
+
+.contato-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-height: 300px;
+    width: 80%;
+    margin: 0 auto;
+}
+.contato-container a{
+    color: var(--blue-sapphire);
+    text-align: center;
+
+    width: 150px;
+    height: 150px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: .5rem;
+
+    transition: .8s ease-in-out all;
+}
+.contato-container a:hover{
+    border: 2px var(--blue-sapphire) solid;
+    border-radius: 5px;
+    background-color: var(--light-green);
+
+}

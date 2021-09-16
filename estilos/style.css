@@ -109,7 +109,7 @@ footer p a:hover{
     header {
         height: 40vw;
         padding: 0;
-        background-color: black;
+        background-color: var(--blue-sapphire);
     }
     header img{
         width: 100%;
