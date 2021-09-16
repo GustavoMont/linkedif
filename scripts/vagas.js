@@ -2,6 +2,11 @@
 document.body.onload = () => {
     const vagas =  JSON.parse(localStorage.getItem('@vagas'))
     const vagasSection = document.querySelector('#vagas')
+    
+    if (!vagas) {
+        vagasSection.innerHTML = `<h1>Erro ao publicar as vagas. Tente mais tarde</h1>`
+        return
+    }
 
     vagas.forEach(item => {
         const template =  `<div class="vagas-container ">

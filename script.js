@@ -16,7 +16,6 @@ menuBtn.addEventListener('click', () =>{
     menuBtn.innerText = menuBtn.innerText.toLowerCase() === 'menu' ? 'X' : 'MENU' 
     let isBodyHidden = document.body.style.overflow === 'hidden' 
     document.querySelector('#menu').classList.toggle('open')
-    console.log(isBodyHidden)
     document.body.style.overflow = isBodyHidden ? '' : 'hidden'
 })
 
